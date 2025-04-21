@@ -6,12 +6,12 @@ public class PayoffApp {
 
         while(scan.hasNextLine()) {
             String name = scan.nextLine();
-            if(name.isBlank()) {
-                break;
-            }
 
             double apr = scan.nextDouble();
             double balance = scan.nextDouble();
+
+            // Consume \n after balance input 
+            if(scan.hasNextLine()) scan.nextLine();
 
             String aprString = String.format("%.2f%%", apr);
             String balanceString = String.format("$%.2f", balance);
