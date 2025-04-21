@@ -9,9 +9,9 @@ public class PayoffApp {
             if(name.isBlank()) {
                 break;
             }
-            
-            float apr = scan.nextFloat();
-            float balance = scan.nextFloat();
+
+            double apr = scan.nextDouble();
+            double balance = scan.nextDouble();
 
             String aprString = String.format("%.2f%%", apr);
             String balanceString = String.format("$%.2f", balance);
